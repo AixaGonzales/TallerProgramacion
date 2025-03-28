@@ -1,0 +1,162 @@
+{
+	"info": {
+		"_postman_id": "b20ff484-3025-4d1a-b163-dee1c5e23923",
+		"name": "SQL_SERVER",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "43467314",
+		"_collection_link": "https://aixa-6716428.postman.co/workspace/SQL_SERVER~d6647cc8-149d-47e3-b68b-83f11dc6ef4c/collection/43467314-b20ff484-3025-4d1a-b163-dee1c5e23923?action=share&source=collection_link&creator=43467314"
+	},
+	"item": [
+		{
+			"name": "FOLDER",
+			"item": [
+				{
+					"name": "CREATE / CREAR",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"dni\": \"60848414\",\r\n  \"firstName\": \"aixa\",\r\n  \"lastName\": \"gonzales del valle \"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://bug-free-waffle-97q556r67x7x2xwp4-8085.app.github.dev/v1/api/customer/save",
+							"protocol": "https",
+							"host": [
+								"bug-free-waffle-97q556r67x7x2xwp4-8085",
+								"app",
+								"github",
+								"dev"
+							],
+							"path": [
+								"v1",
+								"api",
+								"customer",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "READ / LISTAR",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://bug-free-waffle-97q556r67x7x2xwp4-8085.app.github.dev/v1/api/customer",
+							"protocol": "https",
+							"host": [
+								"bug-free-waffle-97q556r67x7x2xwp4-8085",
+								"app",
+								"github",
+								"dev"
+							],
+							"path": [
+								"v1",
+								"api",
+								"customer"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "READ / LISTAR x ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://bug-free-waffle-97q556r67x7x2xwp4-8085.app.github.dev/v1/api/customer/2",
+							"protocol": "https",
+							"host": [
+								"bug-free-waffle-97q556r67x7x2xwp4-8085",
+								"app",
+								"github",
+								"dev"
+							],
+							"path": [
+								"v1",
+								"api",
+								"customer",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE / EDITAR",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 3,\r\n    \"dni\": \"60848414\",\r\n    \"firstName\": \"aixa 2\",\r\n    \"lastName\": \"gonzales del valle 2 \",\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://bug-free-waffle-97q556r67x7x2xwp4-8085.app.github.dev/v1/api/customer/update",
+							"protocol": "https",
+							"host": [
+								"bug-free-waffle-97q556r67x7x2xwp4-8085",
+								"app",
+								"github",
+								"dev"
+							],
+							"path": [
+								"v1",
+								"api",
+								"customer",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE / ELIMINAR",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 3,\r\n    \"dni\": \"60848414\",\r\n    \"firstName\": \"aixa 2\",\r\n    \"lastName\": \"gonzales del valle 2 \",\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://bug-free-waffle-97q556r67x7x2xwp4-8085.app.github.dev/v1/api/customer/update",
+							"protocol": "https",
+							"host": [
+								"bug-free-waffle-97q556r67x7x2xwp4-8085",
+								"app",
+								"github",
+								"dev"
+							],
+							"path": [
+								"v1",
+								"api",
+								"customer",
+								"update"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
